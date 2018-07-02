@@ -1,0 +1,271 @@
+#__bs_notify__ {
+    display: none !important
+}
+
+.wid {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.public-a {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+.big-tabs {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 30px 0 20px;
+    margin-bottom: 75px;
+}
+
+.big-tabs span {
+    min-width: 80px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 15px;
+    color: #4a4a4a;
+    background: #e8dada;
+    font-size: 14px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    margin: 0 2px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.big-tabs span.acti {
+    background: #d6b9bc;
+    color: #fff
+}
+
+.big-tabs span:hover {
+    background: #d6b9bc;
+    color: #fff
+}
+
+.item-public .box ul li {
+    width: 658px;
+    height: 458px;
+    border: 1px solid #d8d8d8;
+    float: left;
+    margin-bottom: 75px;
+}
+
+.item-public .box ul li:nth-child(even) {
+    float: right
+}
+
+.item-public .box ul li .pic {
+    width: 100%;
+    height: 365px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.item-public .box ul li .pic a:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .85
+}
+
+.item-public .box ul li .pic a img {
+    width: 100%;
+    min-height: 100%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+.item-public .box ul li .text {
+    padding-left: 20px;
+}
+
+.item-public .box ul li .text span {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.4;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.item-public .box ul li .text a {
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.item-public .box ul li .text a:hover {
+    color: #ccc;
+    text-decoration: underline
+}
+
+.article-public {
+    padding-top: 50px;
+}
+
+.article-public .top-box {
+    line-height: 1.4;
+}
+
+.article-public .top-box span {
+    font-size: 16px;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.article-public .top-box h2 {
+    font-size: 30px;
+    color: #4a4a4a;
+    margin-bottom: 35px;
+    font-weight: 600
+}
+
+.article-public p {
+    font-size: 16px;
+    color: #4a4a4a;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px
+}
+
+.article-public img {
+    width: 100%;
+    margin-bottom: 40px
+}
+
+.map img {
+    width: 100%
+}
+
+.map-info {
+    margin: 100px auto;
+    border-top: 2px solid #9b9b9b;
+}
+
+.map-info ul li {
+    width: 100%;
+    border-bottom: 1px solid #9b9b9b;
+    padding: 15px 0;
+    display: table;
+}
+
+.map-info ul li span {
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.4;
+    width: 20%;
+    display: inline-block;
+    display: table-cell;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    
+}
+.map-info ul li span.fw500{
+    font-weight: 500;
+}
+
+.map-info ul li span:nth-child(2) {
+    width: 40%;
+    padding-left: 60px
+}
+
+.map-info ul li span.s1 {
+    padding-left: 60px;
+    background: url("../img/map.jpg") left center no-repeat
+}
+
+.container-public {
+    margin: 100px auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.sidebar-public {
+    width: 175px;
+    float: left;
+    margin-left: 65px;
+}
+
+.sidebar-public h3 {
+    font-size: 25px;
+    color: #4a4a4a;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.sidebar-public .box a {
+    display: block;
+    font-size: 20px;
+    color: #4a4a4a;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.sidebar-public .box a:hover {
+    color: #f00
+}
+
+.show-public {
+    width: 1050px;
+    float: right;
+}
+
+.show-public .big-pic {
+    margin-bottom: 40px;
+}
+
+.show-public .big-pic img {
+    width: 100%
+}
+
+.show-public .text-box p {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: #4a4a4a;
+    margin-bottom: 20px
+}
+
+.logistics h3 {
+    font-size: 25px;
+    color: #4a4a4a;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.logistics .text {
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.logistics .text strong {
+    display: block;
+    margin-bottom: 35px
+}
+
+.logistics .text p {
+    margin-bottom: 5px;
+}
+
+.logistics .text p.mb {
+    margin-bottom: 50px
+}
+
+/*# sourceMappingURL=style.css.map */

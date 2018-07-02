@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/44px/close</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" patternUnits="objectBoundingBox" x="0%" width="100%" height="100%">
+            <use xlink:href="#image-2" transform="scale(0.15,0.15)"></use>
+        </pattern>
+        <image id="image-2" width="200" height="200" xlink:href="data:image/png;base64,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"></image>
+    </defs>
+    <g id="icon/44px/close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-3-Copy" fill="url(#pattern-1)" x="7" y="7" width="30" height="30"></rect>
+    </g>
+</svg>

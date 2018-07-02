@@ -1,0 +1,735 @@
+﻿@import "F:\Sourse\网页模版\fn\fn.styl"
+
+.wid
+	width:1200px;
+	margin:0 auto;
+
+*
+	box-sizing border-box
+
+var
+	font-style normal
+.clear1
+	clear both
+
+input,button,textarea,select
+	outline none
+	font-family "microsoft yahei"
+
+bc=#cbcbcb
+
+
+.pub-tit{
+	text-align center
+	height: 46px;
+	font-family: NotoSans;
+	font-size: 33px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 1.9px;
+	color: #4a4a4a;
+}
+
+
+.data-page
+	padding-bottom 122px
+	padding-top 40px
+	background-color #e3e3e3
+	.box
+		display table
+		width 600px
+		padding-bottom 50px
+		border-radius 8px
+		background-color #ffffff
+		margin 40px auto 0
+		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4), 0 0 6px 0 rgba(169, 169, 169, 0.5);
+		.tabs
+			displayT()
+			a
+				border-bottom 4px solid bc
+				float left
+				heightL 78px
+				width 50%
+				font-family: NotoSans;
+				font-size: 20px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				letter-spacing: 1.2px;
+				text-align: center;
+				color: #4a4a4a;
+				cursor pointer
+				fc()
+				&:after
+					content ''
+					height 52px
+					width 1px
+					left 0
+					background bc
+					center 2
+				&.acti
+					border-color #d59ea5
+		.wrap
+			width 400px
+			margin 0 auto
+			overflow hidden
+			margin-top 26px
+			b
+				margin-top 10px
+				display block
+				font-size: 16px;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.8;
+				letter-spacing: normal;
+				color: #4a4a4a;
+				margin-bottom 20px
+				a
+					color #b98d92
+
+		ul
+			float 0
+			li
+				width 100%
+				float left
+				margin-top 24px
+				&.li0
+					width 60%
+				&.li1
+					width 40%
+					padding-left 20px
+				.sel
+					width 31%
+					margin-left 3.5%
+					ml 0
+				label
+					float left
+					margin-top 8px
+					cursor pointer
+					heightL 40px
+					margin-left 38px
+					ml 0
+
+				span
+					display block
+				input[type="text"],input[type="password"]
+					border-radius: 4px;
+					border: solid 1px #cbcbcb;
+					width 100%
+					height: 44px;
+					font-family: NotoSans;
+					font-size: 14px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					color: #9e9e9e;
+					inputW #9e9e9e
+					padding 0 10px
+					margin-top 8px
+				textarea
+					width 100%
+					border 1px solid bc
+					height 143px
+					padding 8px
+					border-radius 4px
+					margin-top 8px
+
+
+		button
+			margin-top 24px
+			display block
+			line-height 1
+			cursor pointer
+
+.pub-btn
+	background #b98d92
+	border none
+	dm 0
+	width 100%
+	heightL 44px
+	font-family: NotoSans;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: 1.1px;
+	text-align: center;
+	color: #ffffff;
+	border-radius 4px
+	
+
+
+input[type="radio"]
+	padding 0
+	appearance none
+	width 17px
+	height 17px
+	border-radius 50%
+	margin-right 8px
+	border 1px solid bc
+	float left
+	margin-topV 40px 17px
+	check 'e051259eade499d48262e341569229d2_17x17.png'
+
+select
+	float left
+	height 40px
+	border-radius 4px
+	border 1px solid bc
+	margin-top 8px
+	width 100%
+	font-size 14px
+	color #9e9e9e
+	padding 0 9px
+	appearance none
+	background url(../img/cb195e9c484511808aec0dae27bd6bcf_44x44.png) calc(100% - 6px) center no-repeat
+	background-size 22px
+	
+.point
+	h1
+		margin 40px 0
+	.hong
+		padding 38px 0
+		background #d5baba
+		p
+			font-size 18px
+			color #fff
+			text-align center
+		strong
+			text-align center
+			
+			display block
+			font-size 24px
+			margin-top 17px
+			var
+				width 36px
+				heightL 36px
+				border-radius 50%
+				color #fff
+				display inline-block
+				background #4a4a4a
+				margin-right 10px
+			em
+				font-size 28px
+				font-weight 500
+.point-table
+	margin-top 40px
+	
+	padding-bottom 100px
+	displayT()
+	ul
+		border-top 2px solid bc
+		float 0
+		li
+			border-bottom 1px solid bc
+			float 0
+			font-size 20px
+			&.head
+				span
+					font-weight 500
+			span
+				line-height 72px
+				float left
+				width 22%
+				&:last-child
+					width 12%
+.coupon
+	padding-top 40px
+	displayT()
+	.item
+		float 0
+		margin 40px 0
+		h2
+			font-weight 500
+			font-size 24px
+			border-bottom 2px solid #9b9b9b
+			padding-bottom 6px
+			float 0
+			line-height 44px
+		ul
+			li
+				width 290px
+				margin-top 24px
+				margin-left 25px
+				height 140px
+				float left
+				background-image url('d5c996afd1df55fcb2a6110bd8481706_290x140.png')
+				ml 0 3
+				padding 0 25px 0 30px
+				.fl
+					padding-top 15px
+					p
+						font-size 17px
+						color #cc9d9d
+					b
+						font-weight 500
+						color #747474
+						display block
+						font-size 14px
+						margin-top 17px
+					var
+						display block
+						font-size 14px
+						margin-top 4px
+				.fr
+					border-left 2px dashed #ebebeb
+					height 90%
+					margin-top 4px
+					padding-left 10px
+					em
+						float left
+						width 52px
+						height 52px
+						border 1px solid #ececec
+						border-radius 50%
+						display block
+						text-align center
+						font-size 13px
+						line-height 50px
+						color #9b9b9b
+						margin-topV 130px 52px
+						&.yi
+							color #fff
+							background #d59ea5
+							border-color #d59ea5
+							
+.user-center
+	margin-top 60px
+	displayT()
+	h2
+		font-weight 500
+		font-size 24px
+		color #4a4a4a
+	ul
+		border 1px solid #9b9b9b
+		float 0
+		margin-top 16px
+		padding 16px 0
+		li
+			width 50%
+			float left
+			heightL 60px
+			fc()
+			&:after
+				content ''
+				position absolute
+				width 1px
+				height 100%
+				left 0
+				background #979797
+				
+			span
+				padding 0 24px
+				font-weight 500
+				font-size 20px
+				&.fl
+					width 180px
+					
+
+.more
+	float right
+	color #d59ea5
+	font-size 20px
+	line-height 44px
+	font-weight 500
+	i
+		margin-left 6px
+		float right
+		width 33px
+		height 33px
+		background-image url('e5183183c003d94809f135b4c23e7d62_44x44.png')
+		transform rotate(90deg)
+		margin-top 5px
+		
+.order-record
+	.point-table
+		margin-top 100px
+		padding-bottom 0
+		h2
+			font-weight 500
+			font-size 24px
+			padding-bottom 6px
+			float 0
+			line-height 44px
+			color #4a4a4a
+
+.order-item
+	displayT()
+	h1
+		margin 40px 0
+	ul
+		border-top 2px solid bc
+		float 0
+		li
+			border-bottom 1px solid bc
+			float 0
+			font-size 20px
+			&.head
+				> span
+					font-weight 500
+			> span
+				line-height 72px
+				float left
+				width 22%
+				&.sp4
+					width 12%
+					i
+						margin-topV 72px 33px
+						cursor pointer
+						float right
+						widthZ 33px
+						transform rotate(180deg)
+						background-image url('e5183183c003d94809f135b4c23e7d62_44x44.png')
+						&.acti
+							transform rotate(0deg)
+
+					
+			.detailed
+				
+				float 0
+				h3
+					border-top 1px solid bc
+					border-bottom 1px solid bc
+					line-height 72px
+					font-size 18px
+					font-weight 500
+					color #4a4a4a
+				dl
+					border-bottom 1px solid bc
+					float 0
+					padding-bottom 40px
+					dd
+						float 0
+						margin-top 40px
+						.pict
+							float left
+							width 120px
+							img
+								width 100%
+						.text
+							float left
+							margin-left 60px
+							p
+								font-size 14px
+								line-height 2
+
+				.hongdian
+					padding 40px 0
+					float 0
+					.box
+						float left
+						width 33.33%
+						b
+							display block
+							font-weight 500
+							font-size 18px
+							margin-bottom 20px
+						p
+							
+							font-size 16px
+							line-height 1.6
+							color #4a4a4a
+							&.color
+								color #d59ea5
+							span
+								float right
+						input
+							margin-top 16px
+							font-size 14px
+							inputW #9b9b9b
+							padding 0 10px
+							text-indent 0
+							width 325px
+							height 44px
+							border-radius 4px
+							border 1px solid bc
+						.mt61
+							margin-top 61px
+						.wrap
+							p
+								line-height 44px
+								border-bottom 1px solid rgba(#d8d8d8,.4)
+	.wrap-btn
+		width 400px
+		margin 40px auto
+		
+.payable
+	border-bottom 1px solid bc
+	float 0
+	padding 40px 0
+	.fr
+		width 417px
+		p
+			line-height 40px
+			font-size 16px
+			&.color
+				color #d59ea5
+			span
+				float right
+.tabs-state
+	padding-bottom 50px
+	float 0
+	p
+		float left
+		font-size 18px
+		font-weight 500
+		text-align center
+		width 33.33%
+		a
+			border-bottom 4px solid transparent
+			padding-bottom 10px
+			display inline-block
+		&.acti
+			a
+				color #d59ea5
+				position relative
+				border-bottom 4px solid #d59ea5
+
+.fill-item
+	overflow hidden
+	h1
+		margin 40px 0
+.information
+	float 0
+	.sp1
+		width 132px
+		text-align center
+		margin-left 45px
+	.sp2
+		width 50px
+		text-align center
+		margin-left 60px
+	.sp3
+		width 70px
+		text-align center
+		margin-left 55px
+	.sp4
+		width 50px
+		text-align center
+		margin-left 55px
+	.sp5
+		width 50px
+		text-align center
+		margin-left 50px
+	strong
+		line-height 72px
+		display block
+		border-top 1px solid #9b9b9b
+		border-bottom 1px solid #9b9b9b
+		float 0
+		span
+			float left
+			font-size 20px
+			font-weight 500
+		.sp0
+			text-align center
+			width 580px
+	.liUi
+		li
+			margin-top 40px
+			float 0
+			.pict
+				widthZ 120px
+				float left
+				overflow hidden
+				img
+					width 100%
+					min-height 100%
+			.text
+				margin-left 60px
+				float left
+				width 400px
+				p
+					line-height 1.8
+					color #4a4a4a
+			span
+				line-height 120px
+				float left
+				.del
+					width 44px
+					height 44px
+					background-image url('b3f62a968aea9604c0232473887d77dd_44x44.png')
+					display block
+					margin-topV 120px 44px
+					cursor pointer
+				b
+					display block
+					border 1px solid bc
+					height 42px
+					font-weight normal
+					margin-topV 120px 40px
+					input
+						width 50px
+						float left
+						height 100%
+						border none
+						text-align center
+					i
+						cursor pointer
+					.noadd
+						opacity .5
+						cursor no-drop
+					.jian
+						float left
+						width 40px
+						height 40px
+						background-image url('a5e9549a419643ad0b0160dcdfed971c_40x40.png')
+					.jia
+						width 40px
+						height 40px
+						float right
+						background-image url('904ef57cf14c91615e87b4e2a9774313_40x40.png')
+	.payable
+		border-top 1px solid bc
+		margin-top 40px
+		.order-person
+			width auto
+			padding 0
+			width 50%
+			border-bottom none
+			.fl
+				width 100%
+				ul
+					margin-top 0
+					li
+						mt 0
+				select,input
+					width 359px
+				
+			
+	.order-person
+		padding-top 50px
+		float 0
+		border-bottom 1px solid bc
+		padding-bottom 40px
+		h2
+			font-size 20px
+			font-weight 500
+			color #4a4a4a
+		.fl
+			width 50%
+			ul
+				margin-top 20px
+				li
+					margin-top 20px
+					float 0
+					span
+						float left
+						heightL 40px
+						width 110px
+						margin-right 30px
+					select
+						margin-top 0
+					.wrap
+						width 359px
+						float left
+						input
+							margin-top 20px
+					input
+						font-size 14px
+						width 359px
+						height 40px
+						border-radius 4px
+						border 1px solid bc
+						padding 0 8px
+						color #9b9b9b
+						inputW #9b9b9b
+					p
+						float left
+						line-height 40px
+		.fr
+			margin-right 200px
+			width 238px
+			p
+				color #d59ea5
+				margin-top 30px
+	.step
+		padding 40px 0
+		float 0
+		a
+			float left
+			width 260px
+			margin-left 20px
+			ml 0
+			&.prev
+				background #e8dada
+				color #4a4a4a
+				
+.new-pro
+	margin-top 50px
+	padding-bottom 105px
+	displayT()
+	.text
+		float left
+		span
+			width 56px
+			margin-top 106px
+			background #d59ea5
+			text-align center
+			height 27px
+			display block
+			color #fff
+			font-size 18px
+			border-radius 30px
+		h1
+			margin-top 54px
+			font-size 32px
+			font-weight 500
+		p
+			font-size 26px
+			color #4a4a4a
+			margin-top 32px
+			font-weight 500
+			del
+				font-size 20px
+				color #9b9b9b
+				margin-left 20px
+		var
+			display block
+			margin-top 39px
+			font-size 20px
+	.pict
+		float right
+		width 343px
+		height 377px
+		overflow hidden
+		img
+			width 100%
+
+.join-shop
+	margin-top 50px
+	border-top 1px solid #000
+	.numadd
+		width 180px
+		height 60px
+		display block
+		border 1px solid bc
+		font-weight normal
+		input
+			width 50px
+			float left
+			height 100%
+			border none
+			text-align center
+		i
+			cursor pointer
+		.noadd
+			opacity .5
+			cursor no-drop
+		.jian
+			float left
+			width 60px
+			height 60px
+			background-image url('a5e9549a419643ad0b0160dcdfed971c_40x40.png')
+		.jia
+			width 60px
+			height 60px
+			float right
+			background-image url('904ef57cf14c91615e87b4e2a9774313_40x40.png')
+
+	

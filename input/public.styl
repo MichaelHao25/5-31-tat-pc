@@ -1,0 +1,1006 @@
+﻿@import "reset.css";
+@import "font.css";
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";  
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+
+.w
+	max-width 1350px
+	width 100%
+	margin 0 auto
+body
+	font-size 100%
+	min-width 1350px
+
+.header
+	.container
+		max-width 1530px
+		width 100%
+		margin 0 auto
+	.por
+		position relative
+	.brand
+		margin-right 24px
+		width 130px
+		height 72px
+		img
+			display block
+			width 130px
+	.menu
+		padding 11px 0
+		height 50px
+		line-height 50px
+		.root-menu
+			position relative
+			font-size 20px
+			color #000000
+			letter-spacing 1px
+			float left
+			&+.root-menu
+				margin-left 80px
+			&.cild-menu
+				position relative
+				padding-right 28px
+				&.active
+					&:after
+						transform rotateZ(0)	
+				&:after
+					content ''
+					position absolute
+					right 0
+					top 50%
+					margin-top -14px
+					width 28px
+					height 28px
+					background url('../img/expand.svg') center center/90% auto no-repeat
+					transform rotateZ(90deg)
+					transition 0.3s
+	.child-menu-container
+		position absolute
+		top 0
+		left 0
+		right 0
+		z-index 10
+		padding 40px 0
+		background #ffffff
+		display none
+		.columns
+			width 25%
+			float left
+			.item
+			.child-content
+				max-width 300px
+				width 80%
+				margin 0 auto
+			.item
+				position relative
+				border-bottom 1px solid #979797
+				&.active
+					&:before
+						transform translateY(-50%) rotateZ(0)	
+				&:before
+					content ''
+					position absolute
+					right 0
+					top 50%
+					width 24px
+					height 24px
+					transform translateY(-50%) rotateZ(90deg)
+					background url('../img/expand.svg') center center/24px auto no-repeat
+					transition 0.3s
+				.pic
+					padding 18px 0
+					height 50px
+					width 50px
+				.content
+					padding 18px 0 20px
+					box-sizing border-box
+					width calc(100% - 100px)
+					h3
+					small
+						width 100%
+						overflow hidden
+						text-overflow ellipsis
+						white-space nowrap
+					h3
+						font-size 18px
+						color #000000
+						line-height 30px
+						font-weight 500
+					small
+						display block
+						font-size 14px
+						color #808080
+						line-height 20px
+			.child-content
+				display none
+				padding 24px 0
+				border-bottom 1px solid #979797
+				a
+					display block
+					margin 2px 0
+					font-size 15px
+					color #000000
+					line-height 20px
+	.search
+		width 294px
+		margin 14px 0
+		border 1px solid #979797
+		height 44px
+		box-sizing border-box
+		input
+			vertical-align middle
+			border none
+			outline none
+			border-radius 0
+			background none
+			height 42px
+			float left
+		.text
+			height 100%
+			width calc(100% - 44px)
+			box-sizing border-box
+			padding-left 10px
+			font-size 14px
+			&::placeholder
+				color #9b9b9b
+				font-family 'microsoft yahei'
+		.submit
+			width 44px
+			height 100%
+			cursor pointer
+			background url('../img/search.svg') center center no-repeat
+	.user-operation
+		padding-left 16px
+		&.login-ed
+			.item
+				float left
+				padding 2px
+				height 68px
+				width 68px
+				cursor pointer
+				img
+					display block
+					width 100%
+					height auto
+		.card-root
+			position relative
+			span
+				.number
+					position absolute
+					top 0
+					right 0
+					width 30px
+					height 30px
+					text-align center
+					line-height 30px
+					font-size 14px
+					color #ffffff
+					background #b98d92
+					border-radius 50%
+
+		.card-container
+			position absolute
+			width 440px
+			right 0
+			z-index 10
+			box-shadow 0 0 4px 0 rgba(169, 169, 169, 0.5)
+			background #ffffff
+			display none
+			&:after
+				content ''
+				position absolute
+				right 30px
+				top -6px
+				width 10px
+				height 10px
+				background #ffffff
+				border-left 1px solid rgba(169, 169, 169, 0.5)
+				border-top 1px solid rgba(169, 169, 169, 0.5)
+				transform rotate(45deg)
+			.product-item
+				padding 25px
+				border-bottom 1px solid #d8d8d8
+				.pic
+					img
+						display block
+						width 100px
+				.content
+					width 265px
+					font-size 16px
+					color #4a4a4a
+					line-height 22px
+					p
+						height 42px
+						overflow hidden
+						font-weight normal
+					.cost
+						padding-top 5px
+					.number
+						padding-top 5px
+						font-size 16px
+						line-height 26px
+			.check-out
+				display block
+				width 100%
+				font-size 22px
+				color #ffffff
+				font-weight 500
+				letter-spacing 8px
+				text-align center
+				line-height 70px
+				background #b98d92
+		a
+			float left
+			padding 9px 0 10px
+			width 72px
+			text-align center
+			span
+				float left
+				width 100%
+				font-size 12px
+				color #d59ea5
+				line-height 17px
+				font-weight 500
+				img
+					width 36px
+					height 36px
+.main-banner
+	.swiper-wrapper
+		a
+		img
+			display block
+			max-width 1920px
+			width 100%
+			margin 0 auto
+	.swiper-pagination
+		.swiper-pagination-bullet
+			width 12px
+			height 12px
+			background #ffffff
+			margin 0 7px
+			transition 0.3s
+.main-type-bar
+	padding 45px 0
+	font-size 0
+	text-align center
+	.item
+		position relative
+		display inline-block
+		padding-left 50px
+		height 50px
+		line-height 50px
+		font-size 20px
+		color #4a4a4a
+		letter-spacing 1px
+		font-weight 500
+		&+.item
+			margin-left 20px
+		span
+			position absolute
+			left 0
+			top 0
+			bottom 0
+			width 50px
+			background url('../img/966a437377639e558e9902e815647e46-50+50.svg') center center no-repeat
+		&:after
+			display none
+			content ''
+			position absolute
+			left 0
+			width 50px
+			top 0
+			bottom 0
+			background url('../img/966a437377639e558e9902e815647e46-50+50.svg') center center no-repeat
+	.item-2
+		&:after
+			background-image url('../img/c097f4397ba494fd42362e85195cfce7-50+50.svg')
+	.item-3
+		&:after
+			background-image url('../img/3a2820630cc5a6f7a88358a8dea649ff-50+50.svg')
+	.item-4
+		&:after
+			background-image url('../img/d65478b7409d4209611dc64e5ff5d5ec-50+50.svg')
+	.item-5
+		&:after
+			background-image url('../img/4e064d8b79758a4832a0daed4cbc3695-50+50.svg')
+	.item-6
+		&:after
+			background-image url('../img/c746fcac730ede2a0388262ce3b9d5d4-50+50.svg')
+	.item-7
+		&:after
+			background-image url('../img/c446c0a9555756322157e5011da9cc72-50+50.svg')
+	.item-8
+		&:after
+			background-image url('../img/347bb95c269f077739364948b853ece1-50+50.svg')
+	.item-9
+		&:after
+			background-image url('../img/c752a52f4f70bc46d2fba735c22e1096-50+50.svg')
+.main-hot
+	h3
+		padding 52px 0
+		font-size 32px
+		color #d59ea5
+		line-height 45px
+		text-align center
+		font-weight 500
+		&.tal
+			text-align left
+	.product-list
+		.item
+			float left
+			width 300px
+			.pic
+				padding-bottom 16px
+				img
+					display block
+					width 100%
+			&+.item
+				margin-left 50px
+			h4
+			.cost
+				font-size 16px
+				color #000000
+				line-height 26px
+				text-align center
+.main-sale
+	h3
+		padding 80px 0 20px
+		font-size 26px
+		color #d59ea5
+		line-height 37px
+		font-weight 500
+	.item
+		width 650px
+		a
+		img
+			display block
+			width 100%
+	.swiper-pagination
+		.swiper-pagination-bullet
+			width 12px
+			height 12px
+			background #ffffff
+			margin 0 7px
+			transition 0.3s
+.main-more-option
+	padding-top 30px
+	padding-bottom 60px
+	.item
+		position relative
+		width 31%
+		background url('') center center/cover no-repeat
+		
+		&+.item
+			margin-left 3%
+		padding 40px
+		height 400px
+		box-sizing border-box
+		h3
+			font-size 30px
+			color #000000
+			line-height 42px
+			font-weight 500
+		p
+			padding-top 10px
+			font-size 45px
+			color #000000
+			line-height 61px
+			font-weight 100
+		a
+			position absolute
+			bottom 40px
+			width 150px
+			height 50px
+			font-size 27px
+			color #000000
+			text-align center
+			line-height 50px
+			border 1px solid #979797
+			font-weight 500
+	.item-1
+		background-image url('../img/b7760a8959cd259e2100aae15c8514df-960+960.png')
+	.item-2
+		background-image url('../img/3e31eafda6e96cdbfccec1a2566f5c07-960+960.png')
+	.item-3
+		background-image url('../img/e7ab77082e0c20031f8b93521887d252-1014+960.png')
+
+.main-product-sort
+	padding 20px 0
+	border-bottom 1px solid #d8d8d8
+	&.tac
+		text-align center
+		a
+			float none
+			display inline-block
+	a
+		padding 0 10px
+		min-width 80px
+		box-sizing border-box
+		height 40px
+		background #e8dada
+		transition 0.3s
+		text-align center
+		line-height 40px
+		border-radius 6px
+		&:hover
+		&.active
+			color #ffffff
+			background #d6b9bc
+		&+a
+			margin-left 8px
+.main-product-list
+	padding-bottom 50px
+	.clear
+		margin-left -2%
+	.item
+		position relative
+		margin-top 50px
+		width 23%
+		margin-left 2%
+		.link
+			position absolute
+			top 0
+			bottom 0
+			left 0
+			right 0
+			z-index 11
+		.pic
+			position relative
+			img
+				display block
+				width 100%
+			.new
+				position absolute
+				bottom 0
+				left 0
+				width 60px
+				height 30px
+				border-radius 15px
+				font-size 17px
+				color #ffffff
+				background #d59ea5
+				text-align center
+				line-height 30px
+				font-weight 600
+		h3
+		.cost
+			font-size 17px
+			color #4a4a4a
+			line-height 22px
+		h3
+			padding-top 24px
+			height 42px
+			overflow hidden
+			font-weight 500
+		.cost
+			padding-top 5px
+			padding-top 4px
+			font-size 17px
+			font-weight 500
+			.del
+				text-decoration line-through
+				font-size 14px
+				color #808080
+				padding-left 20px
+				font-weight 100
+		.layout
+			position absolute
+			top -90px
+			left -60px
+			right -60px
+			bottom -155px
+			z-index 10
+			box-shadow 0 0 4px 0 rgba(169, 169, 169, 0.5)
+			background linear-gradient(to left,#fff,#fff) right center/60px 100% no-repeat,
+			linear-gradient(to left,#fff,#fff) left center/60px 100% no-repeat
+			// ,linear-gradient(to left,#fff,#fff) right -60px 60px/60px 100% no-repeat
+			display none
+			.close
+				position absolute
+				right 0
+				top 0
+				width 60px
+				height 60px
+				background url('../img/d3e4ce5215866c0f66a6230716eb333a-44+44.svg') center center no-repeat
+				cursor pointer
+			h3
+				padding-top 0
+				height 60px
+				font-size 22px
+				color #4a4a4a
+				letter-spacing 8px
+				line-height 60px
+				text-align center
+				border-bottom 1px solid #d8d8d8
+				background #ffffff
+			.add-card
+				position absolute
+				bottom 0
+				left 0
+				right 0
+				height 70px
+				line-height 70px
+				font-size 22px
+				color #ffffff
+				letter-spacing 8px
+				text-align center
+				background #b98d92
+.public-number-select-plug
+	position absolute
+	margin-left 60px
+	width 120px
+	height 40px
+	border 1px solid #d8d8d8
+	display flex
+	bottom 90px
+	left 0
+	right 0
+	background #ffffff
+	span
+	input
+		display block
+		flex 1
+		border none
+		outline none
+		width 40px
+		text-align center
+	input
+		appearance none
+		font-size 16px
+.footer
+	box-sizing border-box
+	padding-top 70px
+	height 400px
+	background url('../img/e1a385faac1962a888f4d84f70117b29-1920+400.jpg') center center no-repeat
+	h3
+	
+		height 33px
+		min-width 1px
+		font-size 24px
+		color #000000
+		line-height 33px
+		letter-spacing 1px
+	.pt40
+		padding-top 40px
+	.pt10
+		padding-top 10px
+	.copy-right
+		p
+			font-size 20px
+			color #000000
+			line-height 28px
+	.contact
+		padding 20px 0
+		a
+			width 40px
+			&+a
+				margin-left 10px
+			img
+				display block
+				width 100%
+	.menu
+		.item
+			&+.item
+				margin-left 200px
+		.link-group
+			padding-top 40px
+			font-size 16px
+			color #000000
+			letter-spacing 1px
+			a
+				display block
+				line-height 22px
+				height 22px
+				&+a
+					margin-top 20px
+
+.main-product-details
+	.header-row
+		padding 50px 0
+		border-bottom 1px solid #d8d8d8
+		&.bdbn
+			border-bottom none
+		&.p40-0-100
+			padding 40px 0 100px
+		.content
+			.tips
+				padding-top 105px
+				.new
+					width 56px
+					height 28px
+					font-size 17px
+					color #ffffff
+					line-height 28px
+					text-align center
+					background #d59ea5
+					border-radius 14px
+			h3
+				padding-top 40px
+				font-size 32px
+				color #4a4a4a
+				line-height 52px
+				font-weight 500
+			.cost
+				padding-top 10px
+				font-size 26px
+				color #4a4a4a
+				line-height 44px
+				.del
+					padding-left 28px
+					font-size 20px
+					color #9b9b9b
+					line-height 44px
+					text-decoration line-through
+		.pic
+			width 450px
+			height 450px
+			a
+			img
+				display block
+				width 100%
+			.swiper-pagination
+				.swiper-pagination-bullet
+					width 12px
+					height 12px
+					background #000
+					margin 0 7px
+					opacity 0.18
+					transition 0.3s
+					&.swiper-pagination-bullet-active
+						opacity 0.28
+		.public-number-select-plug
+			position static
+			margin-left 0
+			width 180px
+			height 60px
+		.add-card
+			width 450px
+			height 60px
+			font-size 22px
+			letter-spacing 4px
+			color #ffffff
+			background #b98d92
+			text-align center
+			line-height 60px
+			border-radius 4px
+	.info
+		padding-bottom 100px
+		h3
+			font-size 22px
+			color #4a4a4a
+			line-height 80px
+			font-weight 500
+			border-bottom 1px solid #d8d8d8
+		.content
+			padding 20px 0
+			font-size 20px
+			color #4a4a4a
+			line-height 40px
+		.pic
+			padding-top 42px
+			img
+				display block
+				width 49.5%
+
+.main-login
+	height 948px
+	background  url('../img/049fdab552169517011d01f9d19cbdad-1920+948.jpg') center center no-repeat
+	.main-login-title
+		padding 70px 0 40px
+		font-size 33px
+		color #4a4a4a
+		letter-spacing 2px
+		line-height 46px
+		text-align center
+		font-weight 500
+
+.login-register
+	width 418px
+	margin 0 auto
+	.container
+		background #ffffff
+		border-radius 8px
+		min-height 668px
+		&.ovh-register-complate-mt158
+			overflow hidden
+			background none
+			.register-complate
+				margin-top 158px
+				background #ffffff
+		.tabs-control
+			font-size 20px
+			letter-spacing 1px
+			color #4a4a4a
+			.top
+				padding 10px 0
+				display flex
+				a
+					flex 1
+					box-sizing border-box
+					height 52px
+					line-height 52px
+					text-align center
+					&+a
+						border-left 1px solid #979797
+			.bar
+				position relative
+				height 4px
+				background #ededed
+				span
+					position absolute
+					left 0
+					top 0
+					bottom 0
+					background #d59ea5
+					width 50%
+					transition 0.3s
+		.form
+		.join-us
+		.help-me
+			display block
+			padding 0 50px
+		.js-padding-0
+			padding-left 0
+			padding-right 0
+		.form
+			padding-top 30px
+			.pt24
+				padding-top 24px
+			.pt20
+				padding-top 20px
+			.mt8
+				margin-top 8px
+			.mt16
+				margin-top 16px
+			.option
+				display flex
+				justify-content space-between
+				font-size 14px
+				color #4a4a4a
+				line-height 16px
+				height 16px
+				input
+					float left
+				span
+					padding-left 8px
+					float left
+			.m24-0
+				margin 24px 0 64px
+			.radio-container
+				display flex
+				padding-top 10px
+				padding-bottom 70px
+				.item
+					flex 1
+					text-align center
+					font-size 14px
+					color #4a4a4a
+					height 20px
+					line-height 20px
+					label
+						display flex
+						align-items center
+						justify-content center
+					span
+						display block
+						padding-left 8px
+						font-weight 500
+			.pb6
+				padding-bottom 6px
+		.tips
+			padding-bottom 15px
+			padding-top 64px
+			font-size 14px
+			color #4a4a4a
+			text-align center
+			font-weight 500
+			&.bdt
+				border-top 1px solid #979797
+			&.tal
+				text-align left
+			&.pt0
+				padding-top 0
+			&.pt40
+				padding-top 40px
+			&.pt50
+				padding-top 50px
+			&.pt10
+				padding-top 10px
+			&.pb20
+				padding-bottom 20px
+			&.pb40
+				padding-bottom 40px
+			&.pb50
+				padding-bottom 50px
+			&.pb100
+				padding-bottom 100px
+			&.pb25
+				padding-bottom 25px
+		.join-us
+			padding-bottom 50px
+		.help-me
+			.tips
+				text-align left
+			.btn-group
+				padding 15px 0 48px
+				display flex
+				justify-content space-between
+				a
+					display flex
+					justify-content center
+					width 152px
+					height 32px
+					text-align center
+					line-height 32px
+					font-size 11px
+					border-radius 4px
+					background #e3e3e3
+					span
+						display block
+						position relative
+						padding-left 36px
+						height 100%
+						&:after
+							content ''
+							position absolute
+							left 0
+							top 0
+							bottom 0
+							width 32px
+							background url('../img/d0cdfb9f40711f5f9deb53c63b97bc23-44+44.svg') left center/100% auto no-repeat
+						&.line
+							&:after
+								background-image url('../img/5a6b1babcda919554346c42d2e5dd40a-44+44.svg')
+		.register-complate
+			color #4a4a4a
+			text-align center
+			height 668px
+			border-radius 8px
+			h3
+				padding-top 148px
+				padding-bottom 50px
+				font-size 24px
+				line-height 33px
+			p
+				font-size 16px
+				line-height 36px
+			.public-button
+				margin 102px auto 0
+				width 320px
+
+.public-select
+	text-align left
+	color #979797
+	background url('../img/82bfa42ab12f5da394c7a585f67e7e41-44+44.svg') right 10px center/20px auto no-repeat
+		
+.public-label
+	font-size 16px
+	color #4a4a4a
+	letter-spacing 1px
+	line-height 22px
+	font-weight 500
+.public-input
+	padding 8px
+	height 44px
+	width 100%
+	font-size 14px
+	line-height 24px
+	border 1px solid #979797
+	box-sizing border-box
+	outline none
+	border-radius 5px
+	appearance none
+	&::placeholder
+		color #9b9b9b
+		font-family 'misrosoft Yahei'
+.public-checkbox
+	appearance none
+	border 1px solid #979797
+	border-radius 4px
+	width 16px
+	height 16px
+	box-sizing border-box
+	outline none
+	&:checked
+		background url('img/187d48749eb50f58ad71727f4e3ca622-24+18.png') center center/80% auto no-repeat
+.public-button
+	display block
+	border-radius 4px
+	height 44px
+	width 100%
+	font-size 14px
+	color #ffffff
+	text-align center
+	line-height 44px
+	background #b98d92
+	border none
+	outline none
+	font-weight 500
+	&.public-continue
+		color #4a4a4a
+		background #e8dada
+.public-radio
+	position relative
+	appearance none
+	border-radius 50%
+	border 1px solid #979797
+	width 16px
+	height 16px
+	outline none
+	background #ffffff
+	&:after
+		content ''
+		position absolute
+		width 9px
+		height 9px
+		left 50%
+		top 50%
+		transform translate(-50%, -50%) scale(0)
+		background #d59ea5
+		transition 0.3s
+		border-radius 50%
+	&:checked
+		&:after
+			transform translate(-50%, -50%) scale(1)
+.public-textarea
+	width 100%
+	height 170px
+	box-sizing border-box	
+.js-container
+	position relative
+	overflow hidden
+	transition 0.3s
+	height 567px
+	&.active
+		.js-wrapper
+			transform translateX(-100%)
+	.js-wrapper
+		display flex
+		align-items flex-start
+		will-change transform
+		transition 0.3s
+		.js-login
+		.js-join
+			flex 0 0 100%
+			width 100%
+
+
+
+.js-child-container
+	position relative
+	overflow hidden
+	transition 0.3s
+	&.active
+		.js-child-wrapper
+			transform translateX(-100%)
+	.js-child-wrapper
+		display flex
+		align-items flex-start
+		will-change transform
+		transition 0.3s
+		.js-item
+			flex 0 0 100%
+
+
+
+
+
+.layout-gotop
+	position fixed
+	bottom 20px
+	right 0
+	width 100px
+	z-index 10
+	transform translateX(100%)
+	transition 0.3s
+	&.active
+		transform translateX(0)
+	img
+		display block
+		width 100%
